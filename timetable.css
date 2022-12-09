@@ -1,0 +1,121 @@
+/* -------------main css----------- */
+.container {
+  width: 100%;
+  margin: auto;
+}
+.headingefa {
+  width: 40vw;
+  margin-bottom: 1.5rem !important;
+}
+.headingefa,
+div h3 {
+  border: 2px solid black;
+  border-radius: 0px 30px;
+  background-color: var(--lightheadbg);
+  box-shadow: -2px 2px 5px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  padding: 0.32rem 0.5rem;
+  margin: 0.2rem auto;
+  margin-top: 1.5rem;
+}
+
+/* ----------teachers details css--------- */
+.teachers,
+.primarytimetable,
+.timetable {
+  width: 60%;
+  margin: auto;
+  border: 2px solid var(--darkwhite);
+  border-radius: 10px;
+  background-color: var(--lightboxbg);
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+}
+.teachers h3,
+.primarytimetable h3,
+.timetable h3 {
+  display: block;
+  width: 30vw;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+.teachers table,
+.primarytimetable table,
+.timetable table {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 1rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+table tbody tr td,
+th {
+  margin: auto;
+  padding: 0.5rem;
+  border: 1px solid black;
+  background-color: aliceblue;
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+}
+table tbody tr th {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  border: 2px solid black;
+}
+
+/* -----------css for phone--------- */
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+
+  /* --------main css------ */
+  .headingefa {
+    width: 80vw;
+    margin-bottom: 1.5rem !important;
+  }
+  .headingefa,
+  div h3 {
+    font-size: 1rem;
+  }
+
+  /* ----------teachers details css--------- */
+  .teachers,
+  .primarytimetable,
+  .timetable {
+    width: 100%;
+  }
+  .teachers h3,
+  .primarytimetable h3,
+  .timetable h3 {
+    width: 60vw;
+  }
+
+  .teachers table,
+  .timetable table {
+    display: block;
+    width: 100%;
+  }
+  table tbody tr td,
+  th {
+    padding: 0.2rem;
+    border: 1px solid black;
+    background-color: aliceblue;
+    font-size: 0.99rem;
+  }
+  table tbody tr th {
+    font-weight: bolder;
+    font-size: 0.99rem;
+    padding: 0.2rem;
+    border: 2px solid black;
+  }
+}
