@@ -29,7 +29,29 @@ body {
 html {
   font-size: 16px;
 }
+.callcontainer{
+  position: fixed;
+  z-index: 99999;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.callcontainer:hover{
+  bottom: 1.6rem;
+}
 
+.callbox a{
+  overflow: hidden;
+  text-align: center;
+  border: 2px var(--green) solid;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--darkwhite);
+  color: var(--blue);
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 2px  black;
+}
 /* ------------time css----------- */
 .time-container {
   width: 100%;
@@ -207,6 +229,14 @@ marquee {
 @media (max-width: 800px) {
   html {
     font-size: 12px;
+  }
+  .callcontainer{
+    position: fixed;
+    bottom: 6.5rem;
+    right: 0.5rem;
+  }
+  .callbox a{
+    font-size: 0.8rem;
   }
   /* ----header css------ */
   header {
