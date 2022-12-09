@@ -1,3 +1,4 @@
+/* ---------css reset css--------- */
 * {
   margin: 0px;
   padding: 0px;
@@ -7,4 +8,318 @@
 body {
   background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=628&q=80);
   font-family: "Varela Round", sans-serif;
+}
+:root {
+  --black: rgb(22, 25, 44);
+  --white: #ffffff;
+  --darkwhite: #f5f5dc;
+  --whitesmoke: #f5f5f5;
+  --green: #04aa6d;
+  --skyblue: #00b0f0;
+  --cyan: #124760;
+  --blue: #303d6c;
+  --lightcyan: #2caee6;
+  --red: #e65593;
+  --gray: #e7eaf0;
+  --lightheadbg: rgba(240, 248, 255, 0.85);
+  --darkheadbg: rgba(181, 218, 250, 0.947);
+  --lightboxbg: #f0f8ffa6;
+}
+
+html {
+  font-size: 16px;
+}
+.callcontainer{
+  position: fixed;
+  z-index: 99999;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.callcontainer:hover{
+  bottom: 1.6rem;
+}
+
+.callbox a{
+  overflow: hidden;
+  text-align: center;
+  border: 2px var(--green) solid;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--darkwhite);
+  color: var(--blue);
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 2px  black;
+}
+/* ------------time css----------- */
+.time-container {
+  width: 100%;
+  height: fit-content;
+  padding: 0.4rem 1rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-wrapper {
+  border: solid 2px white;
+  border-radius: 360px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 0.4rem;
+}
+.timetext {
+  color: white;
+  background-color: transparent;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0rem 0.2rem;
+}
+#slash {
+  padding-bottom: 0.2rem;
+}
+/* ----header css------ */
+header {
+  width: 100%;
+  background-color: var(--black);
+  padding-bottom: 0.099rem;
+}
+.header {
+  display: grid;
+  grid-template-areas: "left mid mid right";
+}
+.leftheader {
+  grid-area: left;
+  margin: auto;
+  width: 10vw;
+  padding: 0.31rem 0rem;
+}
+.leftheader img {
+  width: 7vw;
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  display: block;
+  margin: 0.2rem auto;
+}
+.leftheader h4 {
+  margin: auto;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 50;
+  padding: 3px 0px;
+  color: var(--darkwhite);
+  font-family: "Oleo Script Swash Caps", cursive !important;
+}
+
+#menuicon {
+  display: none;
+}
+.midheader {
+  grid-area: mid;
+  margin: auto;
+  width: 70vw;
+}
+.midheader nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ul li {
+  margin: 0.2rem 0.1rem;
+  list-style-type: none;
+}
+.midheader ul li a {
+  text-decoration: none;
+  color: var(--darkwhite);
+  font-size: 1rem;
+  padding: 0.1rem 0.4rem;
+}
+.midheader ul li a:hover {
+  color: var(--gray);
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 0.999rem;
+}
+.rightheader {
+  grid-area: right;
+  margin: auto;
+  width: 15vw;
+}
+.rightheader nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rightheader ul li a {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 1rem;
+  padding: 0.1rem 0.4rem;
+}
+.rightheader ul li a:hover {
+  color: var(--darkwhite);
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 0.999rem;
+}
+.floatingbanner {
+  width: 95vw;
+  margin: auto;
+}
+marquee {
+  border: solid 2px var(--darkwhite);
+  border-radius: 50px;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.2rem;
+  display: block;
+  margin: auto;
+  padding: 0.4rem 0.4rem;
+  width: 95vw;
+  font-family: "Noto Serif Devanagari", serif;
+}
+/* ---------footer css---------- */
+.footer {
+  text-align: center;
+  background-color: black;
+  margin: 0px;
+  padding: 0.31rem;
+  width: 100%;
+}
+#footerheading,
+#lastline {
+  display: block;
+  font-size: 0.89rem;
+  margin: 2px auto;
+  background-color: #f0f8ff00;
+  box-shadow: 0px 0px 0px;
+  border: 0px;
+  color: rgb(165, 165, 165);
+}
+.button {
+  display: inline-block;
+  width: fit-content;
+  max-width: 30vw;
+  margin: 0.31rem 1rem;
+}
+.footerbutton {
+  font-size: 0.79rem;
+  padding: 0.31rem;
+  font-weight: bold;
+  background-color: #b6f1f61a;
+  color: rgb(165, 165, 165);
+  border: solid rgb(165, 165, 165) 2px;
+  border-radius: 0.5rem;
+}
+.footerbutton:hover {
+  color: black;
+  background-color: #ecfbfdab;
+  cursor: pointer;
+}
+
+/* -----------css for phone--------- */
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+  .callcontainer{
+    position: fixed;
+    bottom: 6.5rem;
+    right: 0.5rem;
+  }
+  .callcontainer:hover{
+    bottom: 6.7rem;
+  }
+  .callbox a{
+    font-size: 0.8rem;
+  }
+  /* ----header css------ */
+  header {
+    width: 100%;
+    background-color: var(--black);
+    padding-bottom: 0.099rem;
+  }
+  .header {
+    display: grid;
+    grid-template-areas:
+      "left left left"
+      "right right menuicon"
+      " mid mid mid";
+  }
+  .leftheader {
+    width: 90vw;
+  }
+  .leftheader img {
+    width: 150px;
+  }
+  .rightheader {
+    width: 45vw;
+    margin: 0.5rem 0.1rem;
+  }
+  .rightheader nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  #menuicon {
+    display: block;
+    width: 45vw;
+    grid-area: menuicon;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+
+  #menuicon img {
+    width: 2rem;
+    filter: invert();
+  }
+  .header {
+    position: relative;
+  }
+  .midheader {
+    position: absolute;
+    top: -0.25rem;
+    right: 0rem;
+    transition: height 0.5s;
+    height: 0rem;
+    overflow-y: hidden;
+    width: 100%;
+    max-width: 14rem;
+    background-color: #fff;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    z-index: 9999;
+  }
+  .midheader.onofff {
+    height: 21rem;
+  }
+  .midheader nav ul {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.25rem;
+  }
+  .midheader nav ul li{
+    list-style-type:square;
+  }
+  .midheader nav ul li a {
+    color: black;
+  }
+  .midheader ul li a:hover {
+    color: var(--green);
+  }
 }
