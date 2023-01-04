@@ -74,8 +74,36 @@ function showtime() {
 //   }
 // }
 
-let menuitems = document.getElementById("midheader");
-let menubutton = document.getElementById("menuicon");
-menubutton.onclick = function(){
-  menuitems.classList.toggle("onofff");
+// let menuitems = document.getElementById("midheader");
+// let menubutton = document.getElementById("menuicon");
+// menubutton.onclick = function () {
+//   menuitems.classList.toggle("onofff");
+// }
+
+
+let menubox = document.getElementById("menuicon");
+menubox.innerHTML = `
+<div class="hamwrapper">
+<div class="hamburger" id="hamburger">
+<div class="hamstick" id="hamstick1"></div>
+<div class="hamstick" id="hamstick2"></div>
+<div class="hamstick" id="hamstick3"></div>
+</div>
+</div> `;
+
+
+let ham = document.getElementById("hamburger")
+let st1 = document.getElementById("hamstick1")
+let st2 = document.getElementById("hamstick2")
+let st3 = document.getElementById("hamstick3")
+let midheader = document.getElementById("midheader")
+
+ham.addEventListener("click", onn)
+function onn() {
+  ham.classList.toggle("onn");
+  st1.classList.toggle("onnst1");
+  st2.classList.toggle("onnst2");
+  st3.classList.toggle("onnst3");
+  midheader.classList.toggle("onofff");
 }
+
