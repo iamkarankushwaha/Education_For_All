@@ -121,11 +121,12 @@ header {
 }
 
 .leftheader img {
-  width: 7vw;
+  width: 60px;
   border: 2px solid var(--white);
-  border-radius: 30px;
+  border-radius: 10px;
   display: block;
   margin: 0.2rem auto;
+  background-color: white;
 }
 
 .leftheader h4 {
@@ -504,3 +505,4 @@ marquee {
     color: var(--green);
   } */
 }
+
