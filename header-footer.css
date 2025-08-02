@@ -357,9 +357,9 @@ marquee {
     width: 90vw;
   }
 
-  .leftheader img {
+/*   .leftheader img {
     width: 150px;
-  }
+  } */
 
   .rightheader {
     width: 45vw;
@@ -505,4 +505,5 @@ marquee {
     color: var(--green);
   } */
 }
+
 
